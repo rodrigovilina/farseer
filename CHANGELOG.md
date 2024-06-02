@@ -11,10 +11,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.0] - 2024-06-02
 
 ### Added
-- Initial gem relase
+- Initial gem relase.
 - Set up code quality dependencies:
-  - `rake`:      for running common tasks
-  - `rubocop`:   for linting
-  - `rspec`:     for testing
-  - `simplecov`: for code coverage
+  - `rake`:      for running common tasks.
+  - `rubocop`:   for linting.
+  - `rspec`:     for testing.
+  - `simplecov`: for code coverage.
+- License the project with `The Unlicense`.
+- `Rakefile` with `gem`, `rubocop`, and `rspec` tasks.
+- `SECURITY.md` to keep track of maintained versions.
 - `Farseer::VERSION`: Keep the gem version in a constant.
+- `.ruby-version` for rbenv, with version `3.2.2`
+- This `CHANGELOG.md`
