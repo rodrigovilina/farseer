@@ -7,8 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2024-06-02
 
-## [0.0.0] - 2024-06-02
+### Added
+- `Farseer::Result` to hold the result of succesful parses.
+- `Farseer#char_parser` to parse a single specific character.
+- `muina` as a dependency.
+- `bin/console` to jump into `irb` with the project loaded.
+
+### Changed
+
+## [0.1.0] - 2024-06-02
 
 ### Added
 - Initial gem relase.
