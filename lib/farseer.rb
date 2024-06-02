@@ -14,7 +14,7 @@ module Farseer
     ->(char, input) {
       case input[0]
       when char then Maybe.return(Result.new(input[0], input[1..]))
-      else nil
+      else Maybe.none
       end
     }
   end
