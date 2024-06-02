@@ -2,7 +2,8 @@ PATH
   remote: .
   specs:
     farseer (0.1.0)
-      zeitwerk
+      muina (~> 0.3)
+      zeitwerk (~> 2)
 
 GEM
   remote: https://rubygems.org/
@@ -12,6 +13,8 @@ GEM
     docile (1.4.0)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
+    muina (0.3.0)
+      zeitwerk (~> 2)
     parallel (1.24.0)
     parser (3.3.2.0)
       ast (~> 2.4.1)
