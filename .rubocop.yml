@@ -1,0 +1,66 @@
+---
+require:
+  - rubocop-rake
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+
+Bundler/GemVersion:
+  Enabled: true
+  EnforcedStyle: forbidden
+
+Gemspec/DependencyVersion:
+  Enabled: true
+  EnforcedStyle: forbidden
+
+Layout:
+  Enabled: false
+
+Lint:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 15
+
+Metrics/BlockLength:
+  Max: 5
+
+Metrics/BlockNesting:
+  Max: 1
+
+Metrics/ClassLength:
+  Max: 50
+  CountAsOne: [heredoc]
+
+Metrics/CyclomaticComplexity:
+  Max: 5
+
+Metrics/MethodLength:
+  Max: 5
+  CountAsOne: [heredoc]
+
+Metrics/ModuleLength:
+  Max: 50
+  CountAsOne: [heredoc]
+
+Metrics/ParameterLists:
+  Max: 3
+
+Metrics/PerceivedComplexity:
+  Max: 5
+
+Naming/InclusiveLanguage:
+  Enabled: true
+
+RSpec/AlignLeftLetBrace:
+  Enabled: true
+
+RSpec/AlignRightLetBrace:
+  Enabled: true
+
+RSpec/Pending:
+  Enabled: true
+
+Style:
+  Enabled: false
