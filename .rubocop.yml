@@ -1,5 +1,6 @@
 ---
 require:
+  - rubocop-performance
   - rubocop-rake
   - rubocop-rspec
 
@@ -60,6 +61,18 @@ Metrics/PerceivedComplexity:
   Max: 5
 
 Naming/InclusiveLanguage:
+  Enabled: true
+
+Performance/Casecmp:
+  Enabled: true
+
+Performance/IoReadlines:
+  Enabled: true
+
+Performance/OpenStruct:
+  Enabled: true
+
+Performance/SelectMap:
   Enabled: true
 
 RSpec/AlignLeftLetBrace:
