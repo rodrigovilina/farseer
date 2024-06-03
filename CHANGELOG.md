@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2024-06-03
+### Added
+- `Farseer::Char` as a single character parser.
+- `Farseer::Chars` as a single character from set parser.
+- Multiple instances of `Farseer::Char` as constants:
+  - `Farseer::Char::L_PARENS` for `(`.
+  - `Farseer::Char::R_PARENS` for `)`.
+  - `Farseer::Char::PLUS`     for `+`.
+  - `Farseer::Char::MINUS`    for `-`.
+  - `Farseer::Char::STAR`     for `*`.
+  - `Farseer::Char::SLASH`    for `/`.
+- Enabled `Lint` `rubocop` rules.
+- Enabled a couple more `Layout` `rubocop` rules.
+
+### Changed
+- Update `muina` version requirement to `~> 0.5`
+
 ## [0.4.0] - 2024-06-03
 ### Added
 - `Farseer.any_char_parser` to parse a single character from a given set.

@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    farseer (0.4.0)
-      muina (~> 0.4)
+    farseer (0.5.0)
+      muina (~> 0.5)
       zeitwerk (~> 2)
 
 GEM
@@ -54,7 +54,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     lumberjack (1.2.10)
     method_source (1.1.0)
-    muina (0.4.0)
+    muina (0.5.0)
       zeitwerk (~> 2)
     nenv (0.3.0)
     notiffany (0.1.3)
