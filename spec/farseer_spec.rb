@@ -4,10 +4,8 @@ RSpec.describe Farseer do
   describe '#char_parser' do
     specify do
       char = 'a'
-      input = 'ab'
-      rest = 'b'
-      result = described_class.char_parser.call(char, input).value!
-      expected = described_class::Result.new(char, rest)
+      result = described_class.char_parser.call(char, 'ab').value!
+      expected = described_class::Result.new(char, 'b')
 
       expect(result).to eq(expected)
     end
@@ -15,7 +13,6 @@ RSpec.describe Farseer do
     specify do
       char = 'a'
       input = 'bb'
-      rest = 'bb'
       result = described_class.char_parser.call(char, input)
 
       expect(result).to be_none

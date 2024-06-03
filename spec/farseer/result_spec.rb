@@ -2,8 +2,9 @@
 
 RSpec.describe Farseer::Result do
   describe '.new' do
-    specify do
+    it 'takes a token and a rest', :aggregate_failures do
       result = described_class.new('a', 'b')
+
       expect(result.token).to eql('a')
       expect(result.rest).to eql('b')
       expect(result.frozen?).to be true
