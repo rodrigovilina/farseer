@@ -10,11 +10,13 @@ module Farseer
   Maybe = Muina::Maybe
 
   def self.any_char_parser
-    ->(chars, input) { Farseer.__send__(:any_char_parser_helper, chars, input) }.curry
+    ->(chars, input) { Chars.new(chars).parse(input) }
+      .curry
   end
 
   def self.char_parser
-    ->(char, input) { Farseer.__send__(:char_parser_helper, char, input) }.curry
+    ->(char, input) { Char.new(char).parse(input) }
+      .curry
   end
 
   def self.ws_parser
@@ -23,23 +25,6 @@ module Farseer
 
       Maybe.return(Result.new(match[1], match[2]))
     }
-  end
-
-  private
-
-  def self.char_parser_helper(char, input)
-    case input[0]
-    when char then Maybe.return(Result.new(input[0], input[1..]))
-    else Maybe.none
-    end
-  end
-
-  def self.any_char_parser_helper(chars, input)
-    if chars.any? { |char| char == input[0]  }
-      Maybe.return(Result.new(input[0], input[1..]))
-    else
-      Maybe.none
-    end
   end
 end
 

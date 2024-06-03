@@ -20,8 +20,8 @@ RSpec.describe Farseer do
   end
 
   describe '.any_char_parser' do
-    let(:chars) { ['a', 'b'] }
-    let(:char) { chars.sample }
+    let(:chars) { ['a', 'b']   }
+    let(:char)  { chars.sample }
 
     specify do
       input = char + 'b'
