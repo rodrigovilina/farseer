@@ -23,6 +23,12 @@ Layout/RedundantLineBreak:
 Layout/SingleLineBlockChain:
   Enabled: true
 
+Lint/HeredocMethodCallPosition:
+  Enabled: true
+
+Lint/NumberConversion:
+  Enabled: true
+
 Metrics/AbcSize:
   Max: 15
 
