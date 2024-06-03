@@ -13,7 +13,7 @@ Gem::Specification::new do |spec|
   spec.description = 'Functional Parsing Library for Ruby'
   spec.homepage    = 'https://github.com/vaporyhumo/farseer'
 
-  spec.files       = Dir.glob("lib/**/*.rb") + ['README.md', 'LICENSE']
+  spec.files       = Dir.glob("lib/**/*.rb") + ['README.md', 'LICENSE', 'SECURITY.md', 'CHANGELOG.md']
 
   spec.required_ruby_version = Gem::Requirement::new('~> 3.1')
 
