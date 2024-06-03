@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4.0] - 2024-06-03
+### Added
+- `Farseer.any_char_parser` to parse a single character from a given set.
+- `irb` development dependency.
+- `.gitignore.local` symlink to `.git/info/exclude`.
+
+### Changed
+- Stop using `module_function` and change methods into singleton methods.
+- Update `bundler` version.
+
 ## [0.3.0] - 2024-06-02
 ### Added
 - `Farseer#ws_parser` to parse all leading whitespace.
