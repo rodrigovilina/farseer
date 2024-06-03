@@ -23,9 +23,6 @@ Layout/RedundantLineBreak:
 Layout/SingleLineBlockChain:
   Enabled: true
 
-Lint:
-  Enabled: false
-
 Metrics/AbcSize:
   Max: 15
 
