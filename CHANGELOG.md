@@ -7,18 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.2.0] - 2024-06-02
+## [0.3.0] - 2024-06-02
+### Added
+- `Farseer#ws_parser` to parse all leading whitespace.
+- Multiple development dependencies:
+  - `flay`, `flog`, `guard`, `guard-rspec`, `guard-rubocop`, `lefthook`, and
+    `rubocop-performance` with corresponding `binstubs`.
+  - `Guardfile` with `rspec` and `rubocop` guards.
+  - `.lefthook.yml` including `pre-commit` and `pre-push` hooks, and `audit` and
+    `full_audit` tasks.
 
+### Changed
+- Bump `muina` required version to `~> 0.4`.
+- Enabled `Lint` `rubocop` department.
+
+
+## [0.2.0] - 2024-06-02
 ### Added
 - `Farseer::Result` to hold the result of succesful parses.
 - `Farseer#char_parser` to parse a single specific character.
 - `muina` as a dependency.
 - `bin/console` to jump into `irb` with the project loaded.
 
-### Changed
 
 ## [0.1.0] - 2024-06-02
-
 ### Added
 - Initial gem relase.
 - Set up code quality dependencies:
