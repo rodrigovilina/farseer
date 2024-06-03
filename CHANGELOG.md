@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.0] - 2024-06-03
+### Added
+- `Farseer::Opt`  to parse `0` to `1` times the wrapped parser. (`?`)
+- `Farseer::Any`  to parse `0` to multiple times the wrapped parser. (`*`)
+- `Farseer::Many` to parse `1` to multiple times the wrapped parser. (`+`)
+- A couple of instances of `Farseer::Chars` as constants:
+  - `Farseer::Chars::DIGITS` to parse digits from `0` to `9`.
+  - `Farseer::Chars::BASIC_MATH_OP` to parse symbols `+`, `-`, `*`, `/`.
+- Enabled more `Lint` `rubocop` rules.
+- Enabled `Performance` `rubocop` rules.
+
+### Changed
+- Updated development dependencies
+
 ## [0.5.0] - 2024-06-03
 ### Added
 - `Farseer::Char` as a single character parser.
