@@ -24,7 +24,7 @@ RSpec.describe Farseer::Result do
     context 'when tokens and rest are different' do
       specify do
         result = described_class.new('a', 'a')
-        other = described_class.new('b', 'b') 
+        other = described_class.new('b', 'b')
 
         expect(result).not_to eql(other)
       end
@@ -33,7 +33,7 @@ RSpec.describe Farseer::Result do
     context 'when tokens are the same but rest is different' do
       specify do
         result = described_class.new('a', 'a')
-        other = described_class.new('a', 'b') 
+        other = described_class.new('a', 'b')
 
         expect(result).not_to eql(other)
       end
@@ -42,7 +42,7 @@ RSpec.describe Farseer::Result do
     context 'when rest is the same but tokens are different' do
       specify do
         result = described_class.new('a', 'a')
-        other = described_class.new('b', 'a') 
+        other = described_class.new('b', 'a')
 
         expect(result).not_to eql(other)
       end
@@ -51,7 +51,7 @@ RSpec.describe Farseer::Result do
     context 'when token and rest are the same' do
       specify do
         result = described_class.new('a', 'a')
-        other = described_class.new('a', 'a') 
+        other = described_class.new('a', 'a')
 
         expect(result).to eql(other)
       end

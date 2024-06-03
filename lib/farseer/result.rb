@@ -10,7 +10,7 @@ module Farseer
     attr_reader :token, :rest
 
     def eql?(other)
-      self.class.eql?(other.class) and 
+      self.class.eql?(other.class) and
         self.token.eql?(other.token) and
         self.rest.eql?(other.rest)
     end
