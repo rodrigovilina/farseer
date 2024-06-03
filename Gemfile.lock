@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    farseer (0.5.0)
+    farseer (0.6.0)
       muina (~> 0.5)
       zeitwerk (~> 2)
 
