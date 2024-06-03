@@ -14,6 +14,15 @@ Gemspec/DependencyVersion:
   Enabled: true
   EnforcedStyle: required
 
+Layout/HeredocArgumentClosingParenthesis:
+  Enabled: true
+
+Layout/RedundantLineBreak:
+  Enabled: true
+
+Layout/SingleLineBlockChain:
+  Enabled: true
+
 Lint:
   Enabled: false
 
