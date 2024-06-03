@@ -18,4 +18,13 @@ RSpec.describe Farseer do
       expect(result).to be_none
     end
   end
+
+  describe '#ws_parser' do
+    specify do
+      result = described_class.ws_parser.call(' a').value!
+      expected = described_class::Result.new(' ', 'a')
+
+      expect(result).to eq(expected)
+    end
+  end
 end
