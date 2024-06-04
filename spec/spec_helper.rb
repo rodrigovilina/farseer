@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
-require 'simplecov' unless $PROGRAM_NAME == 'bin/mutant'
+require 'simplecov' unless $PROGRAM_NAME.include?('bin/mutant')
 require 'farseer'
+
+Maybe  = Muina::Maybe
+Result = Farseer::Result
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
