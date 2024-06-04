@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0] - 2024-06-04
+### Added
+- `Farseer::And` to run a sequence of parsers that must all succeed.
+- `Farseer::Or` to try multiple parsers until one works.
+- `Farseer::Word` to parse a keyword at the beginning of a string.
+- `Farseer::Regexp` to parse a token using `regexp`.
+- `mutant` development dependency for mutation testing.
+- Achieve `100%` mutation test coverage.
+- `byebug` development dependency for debugging.
+
+### Removed
+- All helper methods of `Farseer`.
+
+### Changed
+- Update development dependencies.
+
 ## [0.6.0] - 2024-06-03
 ### Added
 - `Farseer::Opt`  to parse `0` to `1` times the wrapped parser. (`?`)
