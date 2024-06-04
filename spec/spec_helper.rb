@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'simplecov'
+require 'simplecov' unless $PROGRAM_NAME == 'bin/mutant'
 require 'farseer'
 
 RSpec.configure do |config|
