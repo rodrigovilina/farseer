@@ -13,7 +13,7 @@ module Farseer
 
     def helper(input, tokens = [])
       @parser.parse(input)
-             .bind { |r| helper(r.rest, [*tokens, r.token]) }
+             .bind { |r| helper(r.rest, tokens + [r.token]) }
              .map_none { Result.new(tokens.join, input) }
     end
   end
