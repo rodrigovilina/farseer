@@ -1,6 +1,14 @@
 # frozen_string_literal: true
 
 RSpec.describe Farseer::Opt do
+  describe '.new' do
+    it 'freezes the instance' do
+      parser = described_class.new(Farseer::Char::PLUS)
+
+      expect(parser).to be_frozen
+    end
+  end
+
   describe '#parse' do
     specify do
       input = "ab"
