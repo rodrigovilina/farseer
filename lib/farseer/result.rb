@@ -11,8 +11,8 @@ module Farseer
 
     def eql?(other)
       self.class.eql?(other.class) and
-        self.token.eql?(other.token) and
-        self.rest.eql?(other.rest)
+        token.eql?(other.token) and
+        rest.eql?(other.rest)
     end
     alias == eql?
   end
