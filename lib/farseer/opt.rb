@@ -8,8 +8,9 @@ module Farseer
     end
 
     def parse(input)
-      @parser.parse(input)
-             .map_none { Result.new('', input) }
+      @parser
+        .parse(input)
+        .map_none { Result.new('', input) }
     end
   end
 end

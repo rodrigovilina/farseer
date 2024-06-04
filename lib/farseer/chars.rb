@@ -2,8 +2,8 @@
 
 module Farseer
   class Chars
-    def initialize(chars)
-      @chars = chars
+    def initialize(*chars)
+      @chars = chars.flatten
       freeze
     end
 
