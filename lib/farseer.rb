@@ -1,4 +1,4 @@
-# frozen_string_literal: truei
+# frozen_string_literal: true
 
 require 'muina'
 require 'zeitwerk'
