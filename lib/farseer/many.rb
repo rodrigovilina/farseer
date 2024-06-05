@@ -2,6 +2,8 @@
 
 module Farseer
   class Many
+    include MapFactory
+
     def initialize(parser)
       @parser = parser
       freeze

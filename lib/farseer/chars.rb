@@ -2,6 +2,8 @@
 
 module Farseer
   class Chars
+    include MapFactory
+
     def initialize(*chars)
       @chars = chars.flatten
       freeze

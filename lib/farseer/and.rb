@@ -2,6 +2,8 @@
 
 module Farseer
   class And
+    include MapFactory
+
     def initialize(*parsers)
       @parsers = parsers.flatten
       freeze

@@ -2,6 +2,8 @@
 
 module Farseer
   class Regexp
+    include MapFactory
+
     WS_REGEXP = /^(?'token'\s*)(?'rest'.*)$/
     RegexpError = Class.new(ArgumentError)
 

@@ -2,6 +2,8 @@
 
 module Farseer
   class Word
+    include MapFactory
+
     def initialize(word)
       @word = word
       freeze
