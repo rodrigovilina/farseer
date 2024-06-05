@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0] - 2024-06-04
+### Added
+- `Farseer::Map` which is a parser with a callback to map the resulting token
+    into something else.
+- `Farseer::MapFactory` which adds `#map`, a factory method for new parsers with
+    callbacks. It creates a new instance of `Farseer::Map`.
+- Included `Farseer::MapFactory` into all parsers.
+
+
 ## [0.7.0] - 2024-06-04
 ### Added
 - `Farseer::And` to run a sequence of parsers that must all succeed.
@@ -23,6 +32,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Update development dependencies.
 
+
 ## [0.6.0] - 2024-06-03
 ### Added
 - `Farseer::Opt`  to parse `0` to `1` times the wrapped parser. (`?`)
@@ -36,6 +46,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Updated development dependencies
+
 
 ## [0.5.0] - 2024-06-03
 ### Added
@@ -54,6 +65,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Update `muina` version requirement to `~> 0.5`
 
+
 ## [0.4.0] - 2024-06-03
 ### Added
 - `Farseer.any_char_parser` to parse a single character from a given set.
@@ -63,6 +75,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Stop using `module_function` and change methods into singleton methods.
 - Update `bundler` version.
+
 
 ## [0.3.0] - 2024-06-02
 ### Added
