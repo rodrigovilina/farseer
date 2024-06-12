@@ -16,7 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Change usage of `#eql?` to `#==` in `Farseer::Result`.
 - `Farseer::And` does not join the resulting tokens anymore, but rather return
     an array of tokens.
-
+- Remove all development dependencies from `Gemfile` in favor of having
+    `lollipop` in the `gemspec`.
 
 ## [0.8.0] - 2024-06-04
 ### Added
