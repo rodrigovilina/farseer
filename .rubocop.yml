@@ -15,6 +15,9 @@ Gemspec/DependencyVersion:
   Enabled: true
   EnforcedStyle: required
 
+Gemspec/DevelopmentDependencies:
+  EnforcedStyle: gemspec
+
 Layout/HeredocArgumentClosingParenthesis:
   Enabled: true
 
