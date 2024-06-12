@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.0] - 2024-06-11
+### Added
+- `Farseer::Empty` which always succeeds and parses nothing, returning the whole
+    string as rest.
+
+### Changed
+- Change usage of `#eql?` to `#==` in `Farseer::Result`.
+- `Farseer::And` does not join the resulting tokens anymore, but rather return
+    an array of tokens.
+
+
 ## [0.8.0] - 2024-06-04
 ### Added
 - `Farseer::Map` which is a parser with a callback to map the resulting token
