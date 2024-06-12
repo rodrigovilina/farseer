@@ -22,7 +22,7 @@ RSpec.describe Farseer::And do
       parser = Farseer::Char.new('a')
       parser = described_class.new(parser)
 
-      expect(parser.parse(input)).to eq Maybe.return(Farseer::Result.new('a', 'b'))
+      expect(parser.parse(input)).to eq Maybe.return(Farseer::Result.new(['a'], 'b'))
     end
 
     specify do
@@ -30,7 +30,7 @@ RSpec.describe Farseer::And do
       parser = Farseer::Char.new('a')
       parser = described_class.new([parser])
 
-      expect(parser.parse(input)).to eq Maybe.return(Farseer::Result.new('a', 'b'))
+      expect(parser.parse(input)).to eq Maybe.return(Farseer::Result.new(['a'], 'b'))
     end
 
     context 'when successful' do
@@ -40,8 +40,8 @@ RSpec.describe Farseer::And do
       it 'parses the input sequentially', :aggregate_failures do
         parser = described_class.new(a_parser, b_parser)
 
-        expect(parser.parse("abc")).to eq Maybe.return(Result.new('ab', 'c'))
-        expect(parser.parse("ab")).to eq Maybe.return(Result.new('ab', ''))
+        expect(parser.parse("abc")).to eq Maybe.return(Result.new(['a', 'b'], 'c'))
+        expect(parser.parse("ab")).to eq Maybe.return(Result.new(['a', 'b'], ''))
         expect(parser.parse("ac")).to eq Maybe.none
         expect(parser.parse("bc")).to eq Maybe.none
       end

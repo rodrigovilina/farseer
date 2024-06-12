@@ -12,7 +12,7 @@ module Farseer
     def parse(input)
       return Maybe.none if @parsers.empty?
 
-      initial = Maybe.return(Result.new('', input))
+      initial = Maybe.return(Result.new([], input))
 
       @parsers.reduce(initial) do |maybe_acc, parser|
         bind_accumulator(maybe_acc, parser)
@@ -32,7 +32,7 @@ module Farseer
     end
 
     def combine_results(acc_result, result)
-      combined_tokens = acc_result.token + result.token
+      combined_tokens = acc_result.token + [result.token]
       Maybe.return(Result.new(combined_tokens, result.rest))
     end
   end
