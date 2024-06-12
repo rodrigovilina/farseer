@@ -11,13 +11,13 @@ RSpec.describe Farseer::Result do
     end
   end
 
-  describe '#eql?' do
+  describe '#==' do
     context 'when compared to other class instance' do
       specify do
         result = described_class.new('a', 'a')
         other = Object.new
 
-        expect(result).not_to eql(other)
+        expect(result).not_to eq(other)
       end
     end
 
@@ -26,7 +26,7 @@ RSpec.describe Farseer::Result do
         result = described_class.new('a', 'a')
         other = described_class.new('b', 'b')
 
-        expect(result).not_to eql(other)
+        expect(result).not_to eq(other)
       end
     end
 
@@ -35,7 +35,7 @@ RSpec.describe Farseer::Result do
         result = described_class.new('a', 'a')
         other = described_class.new('a', 'b')
 
-        expect(result).not_to eql(other)
+        expect(result).not_to eq(other)
       end
     end
 
@@ -44,7 +44,7 @@ RSpec.describe Farseer::Result do
         result = described_class.new('a', 'a')
         other = described_class.new('b', 'a')
 
-        expect(result).not_to eql(other)
+        expect(result).not_to eq(other)
       end
     end
 
@@ -53,7 +53,7 @@ RSpec.describe Farseer::Result do
         result = described_class.new('a', 'a')
         other = described_class.new('a', 'a')
 
-        expect(result).to eql(other)
+        expect(result).to eq(other)
       end
     end
   end

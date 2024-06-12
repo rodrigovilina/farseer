@@ -9,11 +9,11 @@ module Farseer
     end
     attr_reader :token, :rest
 
-    def eql?(other)
+    def ==(other)
       self.class.eql?(other.class) and
-        token.eql?(other.token) and
+        token == (other.token) and
         rest.eql?(other.rest)
     end
-    alias == eql?
+    alias eql? ==
   end
 end
