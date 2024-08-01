@@ -16,7 +16,7 @@ GEM
     coderay (1.1.3)
     diff-lcs (1.5.1)
     docile (1.4.0)
-    erubi (1.12.0)
+    erubi (1.13.0)
     ffi (1.17.0)
     ffi (1.17.0-arm64-darwin)
     flay (2.13.3)
@@ -55,13 +55,14 @@ GEM
       reline (>= 0.4.2)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
-    lefthook (1.6.15)
+    lefthook (1.6.16)
     libyear-bundler (0.7.0)
       bundler (>= 1.14, < 3)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    lollipop (0.5.0)
+    lollipop (0.6.0)
+      bundler
       bundler-audit
       byebug
       flay
@@ -81,6 +82,7 @@ GEM
       rubocop-rake
       rubocop-rspec
       rubocop-sorbet
+      rubocop-vaporyhumo (~> 0.2)
       simplecov
       sorbet
       sorbet-progress
@@ -103,7 +105,7 @@ GEM
       nenv (~> 0.1)
       shellany (~> 0.0)
     parallel (1.25.1)
-    parser (3.3.2.0)
+    parser (3.3.3.0)
       ast (~> 2.4.1)
       racc
     path_expander (1.1.1)
@@ -121,7 +123,7 @@ GEM
     rdoc (6.7.0)
       psych (>= 4.0.0)
     regexp_parser (2.9.2)
-    reline (0.5.8)
+    reline (0.5.9)
       io-console (~> 0.5)
     rexml (3.3.0)
       strscan
@@ -131,7 +133,7 @@ GEM
       rspec-mocks (~> 3.13.0)
     rspec-core (3.13.0)
       rspec-support (~> 3.13.0)
-    rspec-expectations (3.13.0)
+    rspec-expectations (3.13.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-mocks (3.13.1)
@@ -160,6 +162,12 @@ GEM
       rubocop (~> 1.61)
     rubocop-sorbet (0.8.3)
       rubocop (>= 0.90.0)
+    rubocop-vaporyhumo (0.3.0)
+      rubocop (~> 1.64)
+      rubocop-performance (~> 1.21)
+      rubocop-rake (~> 0.6)
+      rubocop-rspec (~> 3.0)
+      rubocop-sorbet (~> 0.8)
     ruby-progressbar (1.13.0)
     ruby_parser (3.21.0)
       racc (~> 1.5)
@@ -172,15 +180,15 @@ GEM
       simplecov_json_formatter (~> 0.1)
     simplecov-html (0.12.3)
     simplecov_json_formatter (0.1.4)
-    sorbet (0.5.11428)
-      sorbet-static (= 0.5.11428)
+    sorbet (0.5.11430)
+      sorbet-static (= 0.5.11430)
     sorbet-progress (0.3.0)
       rainbow (= 3.0)
       sorbet (>= 0.4.4314)
       sorbet-runtime (>= 0.4.4314)
-    sorbet-runtime (0.5.11428)
-    sorbet-static (0.5.11428-universal-darwin)
-    stringio (3.1.0)
+    sorbet-runtime (0.5.11430)
+    sorbet-static (0.5.11430-universal-darwin)
+    stringio (3.1.1)
     strscan (3.1.0)
     terminal-notifier-guard (1.7.0)
     thor (1.3.1)
@@ -196,7 +204,8 @@ PLATFORMS
 
 DEPENDENCIES
   farseer!
-  lollipop (~> 0.5)
+  lollipop (~> 0.6)
+  rubocop-vaporyhumo (~> 0.3)
 
 BUNDLED WITH
    2.5.11
